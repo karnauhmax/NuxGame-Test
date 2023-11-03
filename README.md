@@ -1,7 +1,7 @@
 
 # Test Task For NuxGame
 
-- Technologies used for this task: HTML5/SCSS/JS/GULP/Splide/AOS
+- Technologies used for this task: HTML5/SCSS/JS/GULP/Splide
 - Using modern practices, such as CSS variables  for more convenient further page theme mantaining
 - All layouts was builded by native css technlogies, such as grid or flex. No additional grids like Bootstrap.
 - Minimum media queries
