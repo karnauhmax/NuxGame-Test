@@ -1,0 +1,40 @@
+.btn {
+  display: inline-grid;
+  place-items: center;
+  background-color: var(--primary-color);
+  padding: 12px;
+  min-width: 360px;
+  color: var(--white-color);
+  border-radius: 10px;
+  font-weight: 700;
+  border: 1px solid transparent;
+
+  transition: border var(--transition-duration) ease, background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+
+
+  @media (any-hover: hover) {
+   &:hover {
+    background-color: var(--dark-primary-color);
+   }
+  }
+
+  @media screen and (max-width: 576px) {
+    min-width: unset;
+  }
+
+}
+
+.btn-arrow {
+  grid-template-columns: repeat(2, max-content);
+  justify-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 19px;
+
+
+  @media screen and (max-width: 576px) {
+    font-size: 16px;
+  }
+
+}

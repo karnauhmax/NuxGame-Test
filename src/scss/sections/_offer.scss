@@ -1,0 +1,54 @@
+.offer {
+
+  &__inner {
+    gap: 62px;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      gap: 30px;
+    }
+  }
+
+  &__img {
+    flex: 0 1 700px;
+    margin-left: -120px;
+    align-self: start;
+
+    @media screen and (max-width: 1024px) {
+      flex: 0 1 auto;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+
+  &__info {
+    flex: 0 1 488px;
+
+    @media screen and (max-width: 1024px) {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    row-gap: 20px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 20px;
+      row-gap: 10px;
+    }
+
+  }
+}

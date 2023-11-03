@@ -1,0 +1,29 @@
+.breadcrumbs {
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 30px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding-top: 15px;
+  }
+
+  &__list {
+    gap: 5px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      &::after {
+        content: "/";
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: var(--text-color-secondary);
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  //container variables
+
+  --container-width: 1230px;
+  --container-paddings: 0 15px;
+
+  //font variables
+
+  --font-family-primary: 'Montserrat', sans-serif;
+  --font-family-secondary: "Verdana", sans-serif;
+
+  //color variables
+  --text-color: #060048;
+  --text-color-secondary:  rgba(0, 0, 0, 0.70);
+  --bg-color: #E8E5F4;
+  --bg-light-color: #F5F5F7;
+  --white-color: #fff;
+  --secondary-color: #7C7CFF;
+  --primary-color: #440090;
+  --secondary-border: rgba(124, 124, 255, 0.50);
+  --dark-primary-color: rgba(68, 0, 144, 0.80);
+  --dark-color: #000;
+
+  //other variables
+  --box-shadow-primary: 5px 5px 15px 5px rgba(0, 0, 0, 0.04);
+  --border-radius-primary: 15px;
+  --secondary-box-shadow: 5px 5px 50px 5px rgba(232, 218, 247, 0.80);
+  --transition-duration: 0.3s;
+
+  //functional variables
+
+  --header-height: 128px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+}

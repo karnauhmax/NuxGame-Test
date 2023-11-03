@@ -1,0 +1,91 @@
+.accordion {
+  display: grid;
+
+  &__item {
+    display: grid;
+
+    &.active {
+      .accordion__body {
+        grid-template-rows: 1fr;
+      }
+
+      .accordion__head {
+        color: var(--white-color);
+        background-color: var(--primary-color);
+
+        svg {
+          transform: rotate(180deg);
+          fill: white;
+        }
+
+        rect:nth-of-type(2) {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+
+  &__head {
+    text-align: start;
+    padding: 20px 15px;
+    font-weight: 700;
+    border-radius: var(--border-radius-primary);
+    color: var(--text-color);
+    font-size: 24px;
+    transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16px;
+    gap: 15px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: 16px;
+    }
+
+    svg {
+      transition: transform var(--transition-duration) ease, fill var(--transition-duration) ease;
+      fill: rgba(0, 0, 0, 0.60);
+    }
+
+    rect {
+      transform-origin: center;
+      transition: transform var(--transition-duration) ease;
+
+      &:nth-of-type(2) {
+        transform: rotate(90deg);
+      }
+    }
+
+    &:hover {
+      background-color: var(--bg-color);
+    }
+  }
+
+  &__body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows var(--transition-duration) ease;
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__description {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: grid;
+    row-gap: 50px;
+
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      row-gap: 30px;
+    }
+  }
+}

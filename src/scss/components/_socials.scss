@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  @media screen and (max-width: 576px) {
+    gap: 15px;
+  }
+
+  &__link {
+
+    path {
+      transition: fill var(--transition-duration) ease;
+    }
+
+    @media (any-hover: hover) {
+     &:hover {
+      path {
+        fill: var(--secondary-color);
+      }
+     }
+    }
+
+  }
+}
+
+
+
