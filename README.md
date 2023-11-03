@@ -1,5 +1,5 @@
 
-# Test Task For InterLogic
+# Test Task For NuxGame
 
 - Technologies used for this task: HTML5/SCSS/JS/GULP/Splide/AOS
 - Using modern practices, such as CSS variables  for more convenient further page theme mantaining
