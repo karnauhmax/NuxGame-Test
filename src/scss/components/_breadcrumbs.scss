@@ -9,12 +9,13 @@
   @media screen and (max-width: 576px) {
     padding-top: 15px;
   }
-
   &__list {
     gap: 5px;
   }
 
   &__item {
+    display: flex;
+    gap: 5px;
     &:not(:last-child) {
       &::after {
         content: "/";
