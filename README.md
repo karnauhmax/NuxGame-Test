@@ -7,6 +7,7 @@
 - Minimum media queries
 - Task was checked by w3c validator, yoksel html tree.
 - Used manually created utils classes for better reusability.
+- Fully responsive. 1920 - 320.
 
 - You can see live preview here: https://karnauhmax.github.io/NuxGame-Test/
 
