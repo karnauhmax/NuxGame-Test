@@ -23,6 +23,10 @@
       margin: 0 auto;
       max-width: 500px;
     }
+
+    @media screen and (max-width: 576px) {
+      max-width: 300px;
+    }
   }
 
   &__info {
